@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일일공사보고서 - 2026-04-10</title>
+    <style>
+        :root {
+            --header-gradient: linear-gradient(to right, #0f4c81, #1a73b5);
+            --bg-gray: #f4f7f6;
+            --posco-blue: #0f4c81;
+            --success-green: #2ecc71;
+            --warning-orange: #f39c12;
+            --danger-red: #e74c3c;
+            --purple: #9b59b6;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+            background-color: var(--bg-gray);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .report-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            background: var(--header-gradient);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            margin: 10px 0 0;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        /* Dashboard */
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            padding: 25px;
+            background: #fff;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            padding: 15px 10px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            border-radius: 6px 6px 0 0;
+        }
+        .card.total::before { background-color: var(--posco-blue); }
+        .card.day::before { background-color: var(--success-green); }
+        .card.night::before { background-color: var(--purple); }
+        .card.midnight::before { background-color: var(--warning-orange); }
+        .card.senior::before { background-color: var(--danger-red); }
+
+        .card-label { font-size: 13px; color: #666; display: block; margin-bottom: 8px; }
+        .card-value { font-size: 22px; font-weight: 800; color: #222; }
+        .card-unit { font-size: 14px; font-weight: 400; color: #888; margin-left: 2px; }
+
+        /* Sections */
+        section {
+            padding: 20px 25px;
+            border-top: 1px solid #f0f0f0;
+        }
+        section h2 {
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Contractor Blocks */
+        .contractor-block {
+            margin-bottom: 30px;
+        }
+        .contractor-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 10px;
+            background-color: #e9ecef;
+            color: #495057;
+            border: 1px solid #dee2e6;
+        }
+        .badge-posco { background-color: #0f4c81; color: white; border: none; }
+        .badge-plantec { background-color: #5d6d7e; color: white; border: none; }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        th {
+            background-color: #454d55;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: 500;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+        tbody tr:nth-child(even) { background-color: #f8f9fa; }
+        .col-company { text-align: left; padding-left: 15px; font-weight: 600; }
+        .col-note { text-align: left; padding-left: 15px; color: #666; font-size: 13px; }
+        .sum-row { background-color: #0f4c81 !important; color: white; font-weight: bold; }
+        .sum-row td { border-color: #0f4c81; }
+
+        /* Info Lists */
+        .info-box {
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 15px;
+        }
+        .info-item {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .info-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 4px;
+            font-size: 15px;
+        }
+        .info-desc {
+            color: #555;
+            font-size: 14px;
+            padding-left: 10px;
+            border-left: 2px solid #ddd;
+        }
+
+        /* Overtime Section */
+        .overtime-box {
+            border: 1px solid #ffd8a8;
+            background-color: #fff9db;
+            padding: 15px;
+            border-radius: 6px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 15px 25px;
+            background: #f1f3f5;
+            text-align: right;
+            font-size: 12px;
+            color: #888;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 700px) {
+            .dashboard { grid-template-columns: repeat(3, 1fr); }
+            header h1 { font-size: 18px; }
+            th, td { padding: 8px 4px; font-size: 12px; }
+        }
+
+        /* Print */
+        @media print {
+            body { background: white; padding: 0; }
+            .report-container { box-shadow: none; max-width: 100%; }
+            .dashboard { gap: 5px; }
+            .card { border: 1px solid #ccc; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="report-container">
+    <header>
+        <h1>📋 광양 2고로 2차개수 일일공사보고서</h1>
+        <p>2026년 04월 10일 (금)</p>
+    </header>
+
+    <div class="dashboard">
+        <div class="card total">
+            <span class="card-label">총원</span>
+            <span class="card-value">225<span class="card-unit">명</span></span>
+        </div>
+        <div class="card day">
+            <span class="card-label">주간 작업자</span>
+            <span class="card-value">225<span class="card-unit">명</span></span>
+        </div>
+        <div class="card night">
+            <span class="card-label">야간 작업자</span>
+            <span class="card-value">89<span class="card-unit">명</span></span>
+        </div>
+        <div class="card midnight">
+            <span class="card-label">철야 작업자</span>
+            <span class="card-value">0<span class="card-unit">명</span></span>
+        </div>
+        <div class="card senior">
+            <span class="card-label">65세 이상</span>
+            <span class="card-value">12<span class="card-unit">명</span></span>
+        </div>
+    </div>
+
+    <section>
+        <h2>👷 인원 현황</h2>
+        
+        <!-- 블록 1: 포스코이앤씨 -->
+        <div class="contractor-block">
+            <span class="contractor-badge badge-posco">포스코이앤씨</span>
+            <table>
+                <thead>
+                    <tr>
+                        <th width="20%">업체명</th>
+                        <th width="10%">구분</th>
+                        <th width="10%">인원수</th>
+                        <th width="25%">투입장비</th>
+                        <th width="35%">비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-company">포스코이앤씨</td>
+                        <td>도급</td>
+                        <td>37</td>
+                        <td>-</td>
+                        <td class="col-note">연장 8명 (현장 안전관리)</td>
+                    </tr>
+                    <tr>
+                        <td class="col-company">남경건설</td>
+                        <td>하도</td>
+                        <td>11</td>
+                        <td>굴착기 1대</td>
+                        <td class="col-note">운행로 양생포 설치, 배수로/광장 토공</td>
+                    </tr>
+                    <tr>
+                        <td class="col-company">동일산업</td>
+                        <td>하도</td>
+                        <td>22</td>
+                        <td>카고크레인 1대, 지게차 1대</td>
+                        <td class="col-note">65세↑ 3명, #23 BAV 교체</td>
+                    </tr>
+                    <tr>
+                        <td class="col-company">삼진공작</td>
+                        <td>하도</td>
+                        <td>90</td>
+                        <td>크롤러 1대, 크레인 2대, 지게차 1대 등</td>
+                        <td class="col-note">65세↑ 6명, 연장 35명</td>
+                    </tr>
+                    <tr>
+                        <td class="col-company">대아이앤씨</td>
+                        <td>하도</td>
+                        <td>40</td>
+                        <td>카고크레인 1대</td>
+                        <td class="col-note">65세↑ 2명, 연장 40명</td>
+                    </tr>
+                    <tr>
+                        <td class="col-company">대웅기전</td>
+                        <td>하도</td>
+                        <td>13</td>
+                        <td>-</td>
+                        <td class="col-note">65세↑ 1명, 연장 6명</td>
+                    </tr>
+                    <tr class="sum-row">
+                        <td colspan="2">소계 (포스코이앤씨)</td>
+                        <td>213</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 블록 2: 플랜텍 -->
+        <div class="contractor-block">
+            <span class="contractor-badge badge-plantec">플랜텍</span>
+            <table>
+                <thead>
+                    <tr>
+                        <th width="20%">업체명</th>
+                        <th width="10%">구분</th>
+                        <th width="10%">인원수</th>
+                        <th width="25%">투입장비</th>
+                        <th width="35%">비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-company">플랜텍</td>
+                        <td>도급</td>
+                        <td>8</td>
+                        <td>-</td>
+                        <td class="col-note">-</td>
+                    </tr>
+                    <tr>
+                        <td class="col-company">동진건설</td>
+                        <td>하도</td>
+                        <td>4</td>
+                        <td>-</td>
+                        <td class="col-note">Sinter Screen Hood 보수</td>
+                    </tr>
+                    <tr class="sum-row">
+                        <td colspan="2">소계 (플랜텍)</td>
+                        <td>12</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>🔧 주요 공종별 진행현황</h2>
+        <div class="info-box">
+            <div class="info-item">
+                <span class="info-title">본체 철피 및 가설 (삼진공작)</span>
+                <span class="info-desc">Bosh Shell Hole 보수 용접, Shaft Shell 가설재 철거 및 검측, 상개조 비계 설치</span>
+            </div>
+            <div class="info-item">
+                <span class="info-title">배관 및 설비 (대아이앤씨, 동일산업)</span>
+                <span class="info-desc">Hearth Stave 직급수 전환 배관 설치, Grease Pump Room 이설, 열풍로 #23 BAV 교체</span>
+            </div>
+            <div class="info-item">
+                <span class="info-title">토건 및 지원 (남경건설)</span>
+                <span class="info-desc">운행로 양생포 설치, 현수막 기초 배수로 콘크리트 타설, 광장 Slag 포설</span>
+            </div>
+            <div class="info-item">
+                <span class="info-title">전기 및 계장 (대웅기전)</span>
+                <span class="info-desc">Grease Room Cable 결선, 4상 가설 조명 설치, C.A Fan CMS Cable 점검</span>
+            </div>
+            <div class="info-item">
+                <span class="info-title">원료 설비 보수 (동진건설)</span>
+                <span class="info-desc">Sinter Screen Hood #1, #2 보수 작업</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>⚠️ 안전 특이사항</h2>
+        <div class="info-box">
+            <div class="info-item">
+                <span class="info-title">건설기계 사용작업 (7건)</span>
+                <span class="info-desc">800T 크롤러, 200T/50T 크레인, 카고크레인 등 중장비 투입에 따른 작업 반경 통제 및 유도원 배치 확인</span>
+            </div>
+            <div class="info-item">
+                <span class="info-title">65세 이상 고령 작업자 현황 (12명)</span>
+                <span class="info-desc">동일산업 3, 삼진공작 6, 대아이앤씨 2, 대웅기전 1. 건강 상태 수시 확인 및 무리한 작업 금지</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>🌙 연장작업 (17:00~21:00)</h2>
+        <div class="overtime-box">
+            <div class="info-item">
+                <span class="info-title">포스코이앤씨/협력사 (총 89명)</span>
+                <span class="info-desc">P-이앤씨 8, 삼진공작 35, 대아이앤씨 40, 대웅기전 6</span>
+            </div>
+            <div class="info-item" style="margin-top:10px;">
+                <span class="info-title">주요 작업내용</span>
+                <span class="info-desc">현장 안전관리, 상개조 비계 설치, Grease Room 이설 스크랩 소출, 전기 결선 및 테스트</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        본 보고서는 시스템에 의해 자동 생성되었습니다. (출력일시: 2026-04-11 02:30)
+    </footer>
+</div>
+
+</body>
+</html>
