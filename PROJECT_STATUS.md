@@ -1,4 +1,4 @@
-# POSCO 광양 2고로 일일공사보고서 자동화 프로젝트
+# POSCO 광양 2고로 일일공사보고서 자동화 프로젝트 (https://www.genspark.ai/agents?id=7a4fa6fd-146b-4d44-ace9-f12f572c6c0f)
 
 ## 목표
 카카오톡 공사 데이터 → AI 인포그래픽 HTML 보고서 자동 생성 → GitHub Pages 공개 → 이메일 발송
