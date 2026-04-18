@@ -1,0 +1,688 @@
+Error executing tool run_shell_command: Tool "run_shell_command" not found. Did you mean one of: "grep_search", "cli_help", "read_file"?
+[LocalAgentExecutor] Skipping subagent tool 'codebase_investigator' for agent 'generalist' to prevent recursion.
+[LocalAgentExecutor] Skipping subagent tool 'cli_help' for agent 'generalist' to prevent recursion.
+[LocalAgentExecutor] Skipping subagent tool 'generalist' for agent 'generalist' to prevent recursion.
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'run_shell_command' is not available to this agent.
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'generalist' is not available to this agent.
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'cli_help' is not available to this agent.
+Error executing tool list_directory: Path not in workspace: Attempted path "/Users/clean/.gemini" resolves outside the allowed workspace directories: /Users/clean/POSCO_카톡 or the project temp directory: /Users/clean/.gemini/tmp/posco
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'web_fetch' is not available to this agent.
+Error authenticating: FatalCancellationError: Authentication cancelled by user.
+    at initOauthClient (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:250146:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async createCodeAssistContentGenerator (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:277663:24)
+    at async file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:278003:42
+    at async createContentGenerator (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:277960:21)
+    at async Config.refreshAuth (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:348942:29)
+    at async main (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/gemini.js:14397:9) {
+  exitCode: 130
+}
+Error executing tool web_fetch: Tool "web_fetch" not found. Did you mean one of: "grep_search", "read_file", "cli_help"?
+Error executing tool run_shell_command: Tool "run_shell_command" not found. Did you mean one of: "grep_search", "cli_help", "read_file"?
+[LocalAgentExecutor] Skipping subagent tool 'codebase_investigator' for agent 'generalist' to prevent recursion.
+[LocalAgentExecutor] Skipping subagent tool 'cli_help' for agent 'generalist' to prevent recursion.
+[LocalAgentExecutor] Skipping subagent tool 'generalist' for agent 'generalist' to prevent recursion.
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'run_shell_command' is not available to this agent.
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'generalist' is not available to this agent.
+[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'run_shell_command' is not available to this agent.
+[LocalAgentExecutor] Skipping subagent tool 'codebase_investigator' for agent 'generalist' to prevent recursion.
+[LocalAgentExecutor] Skipping subagent tool 'cli_help' for agent 'generalist' to prevent recursion.
+[LocalAgentExecutor] Skipping subagent tool 'generalist' for agent 'generalist' to prevent recursion.
+xterm.js: Parsing error:  {
+  position: 26,
+  code: 235,
+  currentState: 12,
+  collect: 44,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 39,
+  code: 236,
+  currentState: 9,
+  collect: 0,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 75,
+  code: 236,
+  currentState: 12,
+  collect: 44,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 88,
+  code: 236,
+  currentState: 12,
+  collect: 44,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 101,
+  code: 236,
+  currentState: 12,
+  collect: 44,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 133,
+  code: 237,
+  currentState: 12,
+  collect: 44,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 26,
+  code: 235,
+  currentState: 12,
+  collect: 44,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 39,
+  code: 236,
+  currentState: 9,
+  collect: 0,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 75,
+  code: 236,
+  currentState: 12,
+  collect: 44,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 88,
+  code: 236,
+  currentState: 12,
+  collect: 44,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 101,
+  code: 236,
+  currentState: 12,
+  collect: 44,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 133,
+  code: 237,
+  currentState: 12,
+  collect: 44,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 34,
+  code: 235,
+  currentState: 12,
+  collect: 657203239,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 47,
+  code: 236,
+  currentState: 9,
+  collect: 0,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 92,
+  code: 236,
+  currentState: 12,
+  collect: 657203239,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 108,
+  code: 236,
+  currentState: 12,
+  collect: 657203239,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 124,
+  code: 236,
+  currentState: 12,
+  collect: 657203239,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+xterm.js: Parsing error:  {
+  position: 162,
+  code: 237,
+  currentState: 12,
+  collect: 657203239,
+  params: s3 {
+    maxLength: 32,
+    maxSubParamsLength: 32,
+    params: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    length: 1,
+    _subParams: Int32Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _subParamsLength: 0,
+    _subParamsIdx: Uint16Array(32) [
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0, 0, 0, 0, 0,
+      0, 0, 0, 0, 0
+    ],
+    _rejectDigits: false,
+    _rejectSubDigits: false,
+    _digitIsSub: false
+  },
+  abort: false
+}
+Attempt 1 failed. Retrying with backoff... _GaxiosError: request to https://cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse failed, reason: read ECONNRESET
+    at Gaxios._request (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:6585:66)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async _OAuth2Client.requestAsync (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:8544:16)
+    at async CodeAssistServer.requestStreamingPost (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:276956:17)
+    at async CodeAssistServer.generateContentStream (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:276756:23)
+    at async file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:277597:19
+    at async file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:254636:23
+    at async retryWithBackoff (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:274556:23)
+    at async GeminiChat.makeApiCallAndProcessStream (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:309884:28)
+    at async GeminiChat.streamWithRetries (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:309727:29) {
+  config: {
+    url: 'https://cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse',
+    method: 'POST',
+    params: { alt: 'sse' },
+    headers: {
+      'Content-Type': 'application/json',
+      'User-Agent': 'GeminiCLI/0.37.0/gemini-3.1-pro-preview (darwin; x64; terminal) google-api-nodejs-client/9.15.1',
+      Authorization: '<<REDACTED> - See `errorRedactor` option in `gaxios` for configuration>.',
+      'x-goog-api-client': 'gl-node/22.14.0'
+    },
+    responseType: 'stream',
+    body: '<<REDACTED> - See `errorRedactor` option in `gaxios` for configuration>.',
+    signal: AbortSignal { aborted: false },
+    retry: false,
+    paramsSerializer: [Function: paramsSerializer],
+    validateStatus: [Function: validateStatus],
+    errorRedactor: [Function: defaultErrorRedactor]
+  },
+  response: undefined,
+  error: FetchError2: request to https://cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse failed, reason: read ECONNRESET
+      at ClientRequest.<anonymous> (file:///usr/local/lib/node_modules/@google/gemini-cli/bundle/chunk-JCJR4TJP.js:5507:18)
+      at ClientRequest.emit (node:events:518:28)
+      at emitErrorEvent (node:_http_client:104:11)
+      at TLSSocket.socketErrorListener (node:_http_client:518:5)
+      at TLSSocket.emit (node:events:518:28)
+      at emitErrorNT (node:internal/streams/destroy:170:8)
+      at emitErrorCloseNT (node:internal/streams/destroy:129:3)
+      at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    type: 'system',
+    errno: 'ECONNRESET',
+    code: 'ECONNRESET'
+  },
+  code: 'ECONNRESET',
+  [Symbol(gaxios-gaxios-error)]: '6.7.1'
+}
