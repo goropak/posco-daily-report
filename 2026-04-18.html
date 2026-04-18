@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광양 2고로 2차개수 일일공사보고서_2026-04-18</title>
+    <style>
+        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 20px; background-color: #f4f7f9; }
+        .report-container { max-width: 1000px; margin: 0 auto; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden; }
+        
+        /* Header */
+        header { background: linear-gradient(135deg, #0f4c81 0%, #1a73b5 100%); color: white; padding: 30px; text-align: center; }
+        header h1 { margin: 0; font-size: 24px; letter-spacing: -1px; }
+        header p { margin: 10px 0 0; opacity: 0.9; font-size: 18px; }
+
+        /* Dashboard Cards */
+        .dashboard { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; padding: 20px; background: #f8f9fa; }
+        .card { background: white; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-top: 5px solid; }
+        .card.total { border-top-color: #0f4c81; }
+        .card.day { border-top-color: #28a745; }
+        .card.night { border-top-color: #6f42c1; }
+        .card.overnight { border-top-color: #fd7e14; }
+        .card.senior { border-top-color: #dc3545; }
+        .card-title { font-size: 14px; color: #666; margin-bottom: 10px; }
+        .card-value { font-size: 22px; font-weight: bold; color: #333; }
+
+        /* Section Styles */
+        section { padding: 20px; border-bottom: 1px solid #eee; }
+        section h2 { font-size: 18px; color: #0f4c81; border-left: 5px solid #0f4c81; padding-left: 10px; margin-bottom: 20px; }
+
+        /* Table Styles */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 10px; font-size: 14px; }
+        th { background-color: #0f4c81; color: white; padding: 12px; text-align: center; }
+        td { padding: 10px; border: 1px solid #dee2e6; text-align: center; }
+        tr:nth-child(even) { background-color: #f8f9fa; }
+        .subtotal-row { background-color: #0f4c81 !important; color: white; font-weight: bold; }
+        
+        /* Badges */
+        .badge { padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; color: white; display: inline-block; margin-bottom: 10px; }
+        .bg-posco { background-color: #005a91; }
+        .bg-dx { background-color: #4e73df; }
+
+        /* Footer */
+        footer { background: #f8f9fa; padding: 15px; text-align: center; font-size: 12px; color: #999; }
+
+        @media screen and (max-width: 700px) {
+            .dashboard { grid-template-columns: repeat(2, 1fr); }
+            .card:last-child { grid-column: span 2; }
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .report-container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        <header>
+            <h1>📋 광양 2고로 2차개수 일일공사보고서</h1>
+            <p>2026년 04월 18일 (토)</p>
+        </header>
+
+        <div class="dashboard">
+            <div class="card total">
+                <div class="card-title">총원</div>
+                <div class="card-value">142명</div>
+            </div>
+            <div class="card day">
+                <div class="card-title">주간 작업자</div>
+                <div class="card-value">128명</div>
+            </div>
+            <div class="card night">
+                <div class="card-title">야간 작업자</div>
+                <div class="card-value">14명</div>
+            </div>
+            <div class="card overnight">
+                <div class="card-title">철야 작업자</div>
+                <div class="card-value">0명</div>
+            </div>
+            <div class="card senior">
+                <div class="card-title">65세 이상</div>
+                <div class="card-value">8명</div>
+            </div>
+        </div>
+
+        <section>
+            <h2>👷 인원 현황</h2>
+            
+            <div style="margin-bottom: 30px;">
+                <span class="badge bg-posco">포스코이앤씨</span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>업체명</th>
+                            <th>구분</th>
+                            <th>인원수</th>
+                            <th>투입장비</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>포스코이앤씨</td>
+                            <td>도급</td>
+                            <td>15</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>대동공업</td>
+                            <td>하도</td>
+                            <td>42</td>
+                            <td>크레인 2대</td>
+                            <td>65세↑ 3명</td>
+                        </tr>
+                        <tr>
+                            <td>삼우기공</td>
+                            <td>하도</td>
+                            <td>35</td>
+                            <td>지게차 1대</td>
+                            <td>연장 8명 (3h)</td>
+                        </tr>
+                        <tr class="subtotal-row">
+                            <td colspan="2">소계</td>
+                            <td>92</td>
+                            <td>3대</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <span class="badge bg-dx">포스코DX</span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>업체명</th>
+                            <th>구분</th>
+                            <th>인원수</th>
+                            <th>투입장비</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>포스코DX</td>
+                            <td>도급</td>
+                            <td>8</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>에이치엔에스</td>
+                            <td>하도</td>
+                            <td>42</td>
+                            <td>고소작업대 3대</td>
+                            <td>연장 6명 (2h), 65세↑ 5명</td>
+                        </tr>
+                        <tr class="subtotal-row">
+                            <td colspan="2">소계</td>
+                            <td>50</td>
+                            <td>3대</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>🔧 주요 공종별 진행현황</h2>
+            <ul>
+                <li><strong>고로 본체 해체 작업:</strong> (대동공업) 상부 철피 절단 및 인양 작업 (진도율 45%)</li>
+                <li><strong>냉각 스테이브 교체:</strong> (삼우기공) 3단 스테이브 해체 및 신설 자재 반입</li>
+                <li><strong>계전 설비 이설:</strong> (에이치엔에스) 제어 케이블 포설 및 단말 처리 작업</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>⚠️ 안전 특이사항</h2>
+            <ul>
+                <li><strong>건설기계 사용작업:</strong> 총 6건 (크레인 2, 지게차 1, 고소작업대 3)</li>
+                <li><strong>65세 이상 고령 작업자 현황:</strong> 총 8명 (대동공업 3, 에이치엔에스 5)</li>
+                <li><strong>특이사항:</strong> 우천 대비 자재 보양 및 배수로 점검 실시</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🌙 연장작업</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>시간</th>
+                        <th>업체</th>
+                        <th>인원수</th>
+                        <th>작업 내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>17:00 ~ 20:00</td>
+                        <td>삼우기공</td>
+                        <td>8명</td>
+                        <td>스테이브 반입 자재 정리</td>
+                    </tr>
+                    <tr>
+                        <td>17:00 ~ 19:00</td>
+                        <td>에이치엔에스</td>
+                        <td>6명</td>
+                        <td>케이블 트레이 고정 작업</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            본 보고서는 시스템에 의해 자동 생성되었습니다. (출력일시: 2026-04-18 10:00)
+        </footer>
+    </div>
+</body>
+</html>
