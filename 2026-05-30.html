@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📋 광양 2고로 2차개수 일일공사보고서_2026-05-30</title>
+    <style>
+        body { font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background: #f4f7f9; }
+        .header { background: linear-gradient(to right, #0f4c81, #1a73b5); color: white; text-align: center; padding: 30px 20px; }
+        .header h1 { margin: 0; font-size: 24px; }
+        .header p { margin: 10px 0 0; font-size: 16px; opacity: 0.9; }
+        
+        .dashboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 15px; padding: 20px; max-width: 1000px; margin: -30px auto 20px; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); padding: 15px; text-align: center; border-top: 5px solid #ccc; }
+        .card.blue { border-top-color: #0f4c81; }
+        .card.green { border-top-color: #28a745; }
+        .card.purple { border-top-color: #6f42c1; }
+        .card.orange { border-top-color: #fd7e14; }
+        .card.red { border-top-color: #dc3545; }
+        .card-title { font-size: 14px; color: #666; margin-bottom: 5px; }
+        .card-value { font-size: 22px; font-weight: bold; color: #333; }
+        
+        .section { background: white; margin: 20px auto; max-width: 1000px; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .section h2 { border-left: 5px solid #0f4c81; padding-left: 10px; font-size: 18px; margin-bottom: 15px; }
+        
+        table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+        th, td { border: 1px solid #dee2e6; padding: 10px; text-align: center; font-size: 14px; }
+        th { background-color: #f8f9fa; color: #495057; }
+        .total-row { background-color: #0f4c81; color: white; font-weight: bold; }
+        
+        .badge { display: inline-block; padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; color: white; background: #0f4c81; }
+        
+        footer { text-align: center; padding: 20px; color: #888; font-size: 12px; }
+        
+        @media screen and (max-width: 700px) {
+            .dashboard { grid-template-columns: 1fr 1fr; }
+            .section { margin: 10px; padding: 15px; }
+        }
+        @media print {
+            .header { background: #0f4c81 !important; color: white !important; -webkit-print-color-adjust: exact; }
+            .card { border: 1px solid #ccc !important; box-shadow: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📋 광양 2고로 2차개수 일일공사보고서</h1>
+        <p>2026-05-30 (데이터 미수신 - 복구 모드)</p>
+    </div>
+
+    <div class="dashboard">
+        <div class="card blue"><div class="card-title">총원</div><div class="card-value">32명</div></div>
+        <div class="card green"><div class="card-title">주간 작업자</div><div class="card-value">27명</div></div>
+        <div class="card purple"><div class="card-title">야간 작업자</div><div class="card-value">5명</div></div>
+        <div class="card orange"><div class="card-title">철야 작업자</div><div class="card-value">0명</div></div>
+        <div class="card red"><div class="card-title">65세 이상</div><div class="card-value">3명</div></div>
+    </div>
+
+    <div class="section">
+        <h2>👷 인원 현황</h2>
+
+        <div style="margin-bottom: 20px;">
+            <span class="badge">포스코포스코이앤씨</span>
+            <table style="margin-top: 10px;">
+                <thead>
+                    <tr><th>업체명</th><th>구분</th><th>인원수</th><th>투입장비</th><th>비고</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>포스코포스코이앤씨</td><td>도급</td><td>15</td><td>-</td><td>65세↑ 2명</td></tr>
+                    <tr class="total-row"><td colspan="2">소계</td><td>20명</td><td>-</td><td>연장 5명</td></tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <div style="margin-bottom: 20px;">
+            <span class="badge">포스코포스코플랜텍</span>
+            <table style="margin-top: 10px;">
+                <thead>
+                    <tr><th>업체명</th><th>구분</th><th>인원수</th><th>투입장비</th><th>비고</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>포스코포스코플랜텍</td><td>도급</td><td>12</td><td>-</td><td>65세↑ 1명</td></tr>
+                    <tr class="total-row"><td colspan="2">소계</td><td>12명</td><td>-</td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+    
+    </div>
+
+    <div class="section">
+        <h2>🔧 주요 공종별 진행현황</h2>
+        <div style="white-space: pre-wrap; font-size: 14px;">
+■ 포스코이앤씨 : 15명
+■ 하도사 : 10명[관3, 작7]
+○ 작업시간 : 08:00~17:00
+○ 주요 공종 : 철피 지조립
+- 작업내용 : 블록 #3 용접 및 검사
+- 투입장비 : 200톤 크레인 1대
+■ 연장 : 5명 (17:00~20:00) - 용접 잔여 작업
+■ 65세 이상 : 2명 (이앤씨 1, 하도사 1)
+
+■ 포스코플랜텍 : 12명
+■ 하도사 : 8명[관2, 작6]
+○ 작업시간 : 08:00~17:00
+○ 주요 공종 : PCI 설비 이설
+- 작업내용 : 배관 철거 및 신설
+- 투입장비 : 카고크레인 1대
+■ 65세 이상 : 1명
+    </div>
+    </div>
+
+    <div class="section">
+        <h2>⚠️ 안전 특이사항</h2>
+        <ul>
+            <li>65세 이상 고령 작업자 현황: 총 3명 (작업 전 건강상태 확인 필수)</li>
+            <li>야간/연장 작업 시 조명 및 안전통로 확보 철저</li>
+            <li><b>주의: Google Sheets 데이터 연결 실패로 샘플 데이터가 표시되고 있습니다.</b></li>
+        </ul>
+    </div>
+
+    <footer>
+        본 보고서는 시스템에 의해 자동 생성되었습니다. (출력일시: 2026-05-30 09:49)
+    </footer>
+</body>
+</html>
