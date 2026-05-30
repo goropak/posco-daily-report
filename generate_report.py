@@ -84,7 +84,7 @@ senior_men = 0
 
 # 도급사별 파싱 (정규식 확장 필요)
 contractors = []
-blocks = re.split(r'■\s*(포스코[\w]+)', raw_data)
+blocks = re.split(r'■\s*포스코([\w]+)', raw_data)
 if len(blocks) > 1:
     for i in range(1, len(blocks), 2):
         name = "포스코" + blocks[i]
